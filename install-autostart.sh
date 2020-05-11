@@ -14,6 +14,6 @@ then
 else
     echo "$DIRECTORY does not exist. Creating.."
     mkdir $DIRECTORY
-    echo "Creating hardlink @ $FILE"
-    ln $FILE autostart.sh
+    echo "Creating softlink @ $FILE"
+    ln -s $FILE autostart.sh
 fi
