@@ -72,6 +72,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd_alacritty } },
 	{ MODKEY|Mod1Mask,              XK_w,      spawn,          SHCMD("~/repos/shellscripts/wallp.sh") },
+	{ MODKEY|Mod1Mask,              XK_b,      spawn,          SHCMD("buku-dmenu") },
 	{ MODKEY|Mod1Mask,              XK_f,      spawn,          {.v = firefox } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
