@@ -63,7 +63,7 @@ static const char *roficmdrun[] = {"rofi","-show", "run"};
 static const char *termcmd[]  = { "st", NULL };
 static const char *termcmd_alacritty[]  = { "alacritty", "-e","fish" };
 static const char *firefox[]  = { "firefox", NULL };
-static const char *chrome[]  = { "chromium-browser", NULL };
+static const char *chrome[]  = { "chromium", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
