@@ -64,6 +64,7 @@ static const char *termcmd[]  = { "st", NULL };
 static const char *termcmd_alacritty[]  = { "alacritty", "-e","fish" };
 static const char *firefox[]  = { "firefox", NULL };
 static const char *chrome[]  = { "chromium-browser", NULL };
+static const char *filebrowser[]  = { "thunar", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -72,6 +73,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_d,      spawn,          {.v = roficmdrun } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd_alacritty } },
+	{ MODKEY,                       XK_e,      spawn,          {.v = filebrowser } },
 	{ MODKEY|Mod1Mask,              XK_w,      spawn,          SHCMD("~/repos/shellscripts/wallp.sh") },
 	{ MODKEY|Mod1Mask,              XK_b,      spawn,          SHCMD("~/.local/bin/buku-dmenu") },
 	{ MODKEY|Mod1Mask,              XK_f,      spawn,          {.v = firefox } },
